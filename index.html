@@ -8,24 +8,57 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 </head>
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <h1 class="text-center">worklog.in</h1>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">worklog.in</a>
     </div>
-    <div class="well center-block" style="max-width:400px;">
-      <div class="form-group">
-        <label class="control-label" for="username">Username:</label>
-        <input type="text" class="form-control" id="username">
-      </div>
-      <div class="form-group">
-        <label class="control-label" for="password">Password:</label>
-        <input type="text" class="form-control" id="password">
-      </div>
-        <button type="button" class="btn btn-primary">Login</button>
-        <button type="button" class="btn btn-default pull-right">Reset Password</button>
-        <button type="button" class="btn btn-default">Create Account</button>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Docs</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
     </div>
-  </div>
+    <div class="jumbotron text-center" style="background-color:#6f5499;color:#fff;">
+      <h1><span class="glyphicon glyphicon-time" aria-hidden="true"></span> <span>worklog.in</span></h1>
+      <p style="color:#cdbfe3;">Log your work and generate timesheet reports without hassle.</p>
+    </div>
+    <div class="container-fluid">
+      <div class="well center-block" style="width:361px;">
+        <div class="form-group">
+          <label class="control-label" for="username">Username:</label>
+          <input type="text" class="form-control" id="username">
+        </div>
+        <div class="form-group">
+          <label class="control-label" for="password">Password:</label>
+          <input type="text" class="form-control" id="password">
+        </div>
+
+          <button type="button" class="btn btn-primary">Login</button>
+          <button type="button" class="btn btn-default pull-right">Reset Password</button>
+          <button type="button" class="btn btn-default">Create Account</button>
+
+      </div>
+    </div>
+  </nav>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>
